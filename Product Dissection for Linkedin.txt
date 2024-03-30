@@ -1,0 +1,223 @@
+﻿SHUVADIP SAHU
+
+
+
+
+  
+
+
+
+Product Dissection for Linkedin
+
+
+Company Overview:
+Linkedin is a business and employment-focused social media platform that works through websites and mobile apps. It was launched on May 5, 2003 by Reid Hoffman and Eric Ly.
+Since December 2016, LinkedIn has been a wholly owned subsidiary of Microsoft.The platform is primarily used for professional networking and career development, and allows jobseekers to post their CVs and employers to post jobs.
+
+
+Product Dissection and Real-World Problems Solved by Linkedin:
+Product Dissection:
+LinkedIn serves as a digital hub where professionals cultivate their careers, leveraging tools such as profile creation and networking to foster meaningful connections. Job seekers utilise the platform to explore employment opportunities while companies tap into its extensive talent pool through job postings. Furthermore, LinkedIn fosters knowledge exchange and industry insights through content sharing, solidifying its role as a vital resource for professional growth and networking in today's interconnected world.
+Additionally, LinkedIn offers features like skill endorsements and recommendations, which enhance the credibility and visibility of users' profiles. Its messaging platform facilitates direct communication between professionals, enabling collaboration and networking opportunities. With its diverse user base spanning industries worldwide, LinkedIn serves as a dynamic ecosystem where professionals can engage, learn, and advance their careers.
+
+
+Case Study: Real-World Problems solved by Linkedin:
+1. Personal networking: Linkedin has played a significant role in connecting professionals across different industries, collaborations & job searching.  It helps individuals to expand their professional networking and discovers many opportunities.
+
+
+2. Skill Development & Learning: Linkedin learning portal helps each individual to acquire new skills and knowledge. It can help  everyone to solve real-world problems as per the industry needs. 
+
+
+
+3. Recruitment & Talent Acquisitions: Linkedin is widely used by companies for talent acquisitions & recruitment. Linkedin makes it easy to post jobs opening by the industries as per their requirements and also helps job seekers to find the perfect jobs as per the given requirements.
+
+4.  Marketplace & Services: LinkedIn has evolved into a platform where professionals can offer their services, whether it's consulting, freelancing, or other forms of expertise. This can help address challenges related to finding specialised skills or services in the business world.
+
+
+
+
+
+
+Case Study on Real World Problems and Approach:
+
+
+Problem1:
+Learning & Skill Development:
+Professionals found it difficult to showcase their skills beyond a traditional resume due to its static nature, limiting their ability to demonstrate their expertise comprehensively. As a response, LinkedIn introduced dynamic profile features, enabling users to highlight their skills, achievements, and projects in a more interactive and engaging manner, thus addressing this challenge effectively.
+Approach:
+LinkedIn introduced the "Skills & Endorsements" feature, allowing users to list skills, receive endorsements from connections, and provide a more comprehensive view of their expertise. This feature not only empowers professionals to showcase their capabilities but also fosters credibility within their network, as endorsements serve as testimonials to their proficiency, enhancing their visibility and credibility in their respective fields
+
+
+
+
+
+
+Problem2:
+Job Seeker & Recruitments:
+In the contemporary job market, job seekers often face challenges in finding suitable opportunities that align with their skills and career goals. On the other side, recruiters struggle to identify and connect with qualified candidates efficiently. The traditional recruitment process is often time-consuming, lacks transparency, and may not effectively match candidates with the right job opportunities.
+
+
+Approach:
+
+
+Introduce a dynamic job seeker and recruitment platform with a personalised job matching algorithm, dynamic user profiles, skill validation, transparent application processes, in-platform communication, and data-driven insights. This enhances efficiency, provides a transparent application experience, ensures better candidate-job matches, and supports continuous learning, addressing the challenges faced by both job seekers and recruiters.
+
+
+Problem3:
+Professional community and network building:
+
+
+Professionals face difficulties in building meaningful connections, accessing valuable industry insights, and fostering mentorship opportunities. Traditional networking methods often lack efficiency, making it challenging for individuals to establish a diverse and influential professional community.
+
+
+Approach:
+
+
+ElevateHub introduces a dynamic platform with optimised user profiles, AI-driven connection suggestions, niche interest groups, and robust endorsement systems. Virtual events and webinars foster global networking, while an advanced mentorship program matches experienced professionals with mentees. This approach enhances networking efficiency, encourages knowledge sharing, boosts credibility, and cultivates mentorship, addressing real-world challenges in building a thriving professional community.
+
+
+
+
+Top Features of Linkedin:
+
+
+User profile: Linkedin allows users to create personal profiles, offering insights into their lives through features such as full names, bios, profile pictures & background banner,. This creates a personalised online presence that reflects each user's identity.
+
+
+Posts: A core feature of Linkedin is the ability to share photos and videos related to study material or daily lifestyle as posts. Users can add captions, tag locations, and enhance their content.
+
+
+My Network: LinkedIn is primarily known for its networking capabilities, allowing users to connect with colleagues, peers, mentors, and professionals in their industry.Connection requests can be personalised, and users can expand their networks through mutual connections.
+
+
+Jobs: Users can find jobs on linkedin based on industry types, location and job functions.
+Companies can post job openings and users can directly apply for the jobs.
+
+
+Events: Users can create and discover professional events on LinkedIn, facilitating in-person or virtual networking opportunities.
+
+
+Messaging: Users can directly message to their connection for networking or collaborations.
+
+
+Sales navigation: LinkedIn Sales Navigator is a premium feature designed for sales professionals, providing advanced search and lead generation tools to identify potential clients and customers
+
+
+
+
+
+
+Schema Description:
+The schema for Linkedin involves multiple entities that represent different aspects of the platform. These entities include User, Profile, connections, company, job-posting, skills, and many more. Each entity has specific attributes that describe its properties and relationships with other entities.
+
+
+Entities and Attributes:
+ 1.      User:
+      
+      UserID (Primary Key): A unique identity of each user.
+      Name: The user's full name as displayed on their profile.
+      Email: The user's email address for account-related communication.
+      Location: The user’s current professional locations.
+      Education: It expresses the highest qualification of the user.
+      Experience: It expresses the professional experience of the user.
+2.      Profile:
+ProfileID (Primary Key): A unique profile id of each user.
+UserID (Foreign Key): Unique identity of user.
+Summary: A brief description that users can use to express themselves. 
+Education: It expresses the highest qualification of the user.
+Experience:  It expresses the professional experience of the user.
+Skills: It expresses the skills carried by the user.
+ 
+3.      Connection:
+ConnectionID (Primary Key): An unique connection id for each new connection.
+UserID1 (Foreign Key):
+UserID2 (Foreign Key):
+ConnectionDate: The date when the user connects with a new connection.
+ 
+4.      Company:
+CompanyID (Primary Key): Unique company id of each company.
+Name: The unique name of each company
+Industry: Type of the company.
+Size: No. of employee work at the company.
+Location: The location of the company.
+ 
+5.      Job Posting:
+JobPostingID (Primary Key): Unique id of each job post
+CompanyID (Foreign Key):Unique company id of each company.
+Title: The title of the job opening. 
+Description: Detailed job description.
+Location: The working location.
+Requirements: A short description about the required things for the job.
+ 
+6.      Skill:
+SkillID (Primary Key): Unique skill id of each skill.
+Name: The name of the skill
+Description: Short details about the skill.
+
+
+ 7. Endorsement:
+    EndorsementID(Primary Key):
+    SkillID:
+    EndorserUserID:,
+    ReceiverUserID:
+    Date date:
+
+
+
+
+8.      Profile Job Posting:
+
+
+
+
+ Relationships:
+•                 One-to-Many: User to Experiences (A user can have multiple professional experiences)
+•                 One-to-Many: User to Skills (A user can have multiple skills)
+•                 Many-to-Many: User to Connections
+
+
+
+
+ Rationale Behind the Design:
+
+
+ The schema reflects LinkedIn's focus on professional networking, career development, and skills representation. The Many-to-Many relationship captures the dynamic nature of professional connections. A relational schema is essentially a blueprint for organising and structuring data in a relational database management system (RDBMS). In the context of LinkedIn, the design schema would define how various types of data are related to each other within the platform. This would include entities like users, companies, connections, posts, messages, and more, along with the relationships and constraints between them. The schema helps ensure data integrity and facilitates efficient data retrieval and manipulation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create an ER Diagram:
+
+
+
+
+  
+
+
+
+
+
+Summary:
+In summary, LinkedIn's schema is meticulously crafted to facilitate seamless professional networking, foster career advancement, and effectively showcase users' skills. These design choices reflect LinkedIn's overarching mission of fostering global professional connections and empowering individuals to build robust profiles that encapsulate their unique professional journeys and expertise. By offering a comprehensive platform that transcends geographical boundaries, LinkedIn continues to redefine the landscape of modern career development and networking, empowering professionals worldwide.
