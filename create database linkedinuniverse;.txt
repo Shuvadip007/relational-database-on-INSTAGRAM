@@ -1,0 +1,86 @@
+create database linkedinuniverse;
+use linkedinuniverse;
+-- Table: User
+CREATE TABLE User (
+    UserID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Email VARCHAR(255),
+    Location VARCHAR(255)
+);
+
+-- Table: Profile
+CREATE TABLE Profile (
+    UserID INT PRIMARY KEY,
+    Summary TEXT,
+    Education TEXT,
+    Experience TEXT,
+    Skills TEXT,
+    FOREIGN KEY (UserID) REFERENCES User(UserID)
+);
+
+-- Table: Connection
+CREATE TABLE Connection (
+    ConnectionID INT PRIMARY KEY,
+    UserID1 INT,
+    UserID2 INT,
+    ConnectionDate DATE,
+    FOREIGN KEY (UserID1) REFERENCES User(UserID),
+    FOREIGN KEY (UserID2) REFERENCES User(UserID)
+);
+
+-- Table: Company
+CREATE TABLE Company (
+    CompanyID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Industry VARCHAR(255),
+    Size INT,
+    Location VARCHAR(255)
+);
+
+-- Table: JobPosting
+CREATE TABLE JobPosting (
+    JobPostingID INT PRIMARY KEY,
+    CompanyID INT,
+    Title VARCHAR(255),
+    Description TEXT,
+    Location VARCHAR(255),
+    Requirements TEXT,
+    FOREIGN KEY (CompanyID) REFERENCES Company(CompanyID)
+);
+
+-- Table: Skill
+CREATE TABLE Skill (
+    SkillID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Description TEXT
+);
+
+-- Table: Endorsement
+CREATE TABLE Endorsement (
+    EndorsementID INT PRIMARY KEY,
+    SkillID INT,
+    EndorserUserID INT,
+    ReceiverUserID INT,
+    Date DATE,
+    FOREIGN KEY (SkillID) REFERENCES Skill(SkillID),
+    FOREIGN KEY (EndorserUserID) REFERENCES User(UserID),
+    FOREIGN KEY (ReceiverUserID) REFERENCES User(UserID)
+);
+
+CREATE TABLE User_Skill (
+    UserID INT,
+    SkillID INT,
+    PRIMARY KEY (UserID, SkillID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID),
+    FOREIGN KEY (SkillID) REFERENCES Skill(SkillID)
+);
+
+-- Table: Profile_JobPosting
+CREATE TABLE Profile_JobPosting (
+    ProfileID INT,
+    JobPostingID INT,
+    PRIMARY KEY (ProfileID, JobPostingID),
+    FOREIGN KEY (ProfileID) REFERENCES Profile(UserID),
+    FOREIGN KEY (JobPostingID) REFERENCES JobPosting(JobPostingID)
+);
+
